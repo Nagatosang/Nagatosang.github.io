@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title></title>
+    <url>/2022/07/28/1-JAVA/</url>
+    <content><![CDATA[<p>#JAVA</p>
+<hr>
+<p>每一篇内容是1到50集</p>
+<p>##P11.cmd的Helloworld编译</p>
+<p>###注意</p>
+<blockquote>
+<ol>
+<li>在.java文件所在位置打开cmd</li>
+<li>确保用记事本编译的类名称与.java文件名相同</li>
+</ol>
+</blockquote>
+<p>###cmd的编写</p>
+<blockquote>
+<ol>
+<li>javac 文件名.java(进行编译,使用jdk中bin文件夹下的javac.exe操作,执行后生成文件名.class文件)</li>
+<li>java 文件名(不要加.class后缀,回车后就会执行)</li>
+</ol>
+</blockquote>
+<hr>
+<p>##P14关键字的特点</p>
+<blockquote>
+<ol>
+<li>完全小写的字母 如:public</li>
+<li>有特殊颜色</li>
+</ol>
+</blockquote>
+<hr>
+<p>##P15标识符<br>###什么是标识符</p>
+<blockquote>
+<p>标识符:是指在程序中自己定义的内容,比如类的名字,方法名字,变量名字,都是标识符<br>###命名规则(硬性要求)</p>
+<ol>
+<li>可以包含<strong>英文26字母</strong>,<strong>数字</strong>,<strong>$(美元)</strong>,<strong>_(下划线)</strong>.</li>
+<li>不能以数字开头</li>
+<li>不能是关键字</li>
+</ol>
+<p>###命名规范(软性建议)</p>
+<ol>
+<li>类名规范:首字母大写,后面每个单词首字母大写(大驼峰模式) 如:HelloWorld</li>
+<li>变量名规范:首字母小写,后面每个单词首写字母大写(小驼峰)</li>
+<li>方法名规范:同变量名</li>
+</ol>
+</blockquote>
+<hr>
+<p>##P16常量Const<br>###常量的分类</p>
+<blockquote>
+<ol>
+<li>字符串常量:凡是用双引号引起的部分,叫做字符串常量 如:”abc”,”123”</li>
+<li>整数常量:直接写上的数字,没有小数点 如:100,200</li>
+<li>浮点数常量:直接写上的数字,有小数点 如:2.5</li>
+<li>字符常量:凡是用单引号引起来的单个字符,就做字符常量 如:’A’,’中’,’6’</li>
+<li>布尔常量:true,false</li>
+<li>空常量:null 代表没有任何数据</li>
+</ol>
+<p>###常量的输出<br>System.out.println(“”);可以直接连着<br>System.out.println(‘ ‘);不能连着写,可以中间空格<br>System.out.println(‘AB’);两个单引号之间必须有且仅有一个字符<br>System.out.println(null);空常量null不能直接打印输出</p>
+</blockquote>
+<hr>
+<p>##P18基本数据类型<br>###四类</p>
+<blockquote>
+<p>整数型:byte,short,int,long<br>浮点型:float,double<br>字符型:char<br>布尔型:boolean<br>###整数型</p>
+<table>
+<thead>
+<tr>
+<th>byte</th>
+<th>short</th>
+<th>int</th>
+<th>long</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1字节</td>
+<td>2字节</td>
+<td>4字节</td>
+<td>8字节</td>
+</tr>
+<tr>
+<td>-128-127</td>
+<td>-32768-32767</td>
+<td>正负21亿</td>
+<td>非常大</td>
+</tr>
+<tr>
+<td>###浮点型</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>float</td>
+<td>double(默认)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>——-</td>
+<td>————</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4个字节</td>
+<td>8个字节</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>###注意</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<ol>
+<li>字符串不是基本类型,而是引用类型</li>
+<li>浮点型可能是一个近似值,并非确定的值</li>
+<li>数据范围与字节数不一定相关,列如float数据范围比long更加广泛,但是float是4字节,long是8字节,因为科学计数法省空间</li>
+<li>浮点数当中默认类型是double,如果一定要使用float类型,需要加上一个后缀F</li>
+<li>整数默认是int类型,如果要是long类型,需要加上一个后缀L(推荐使用大写字母,小写字母也行)</li>
+</ol>
+</blockquote>
+<hr>
+<p>##P19变量</p>
+<blockquote>
+<p>运行期间,可以改变的量</p>
+</blockquote>
+<p><strong>创建一个变量</strong></p>
+<blockquote>
+<p>数据类型 变量名称;  </p>
+</blockquote>
+<p><strong>赋值</strong></p>
+<blockquote>
+<p>变量名称 &#x3D; 数据值;</p>
+</blockquote>
+<hr>
+<p>##数据类型转换<br>当数据类型不一样的时候将会发生类型转换</p>
+<blockquote>
+<ol>
+<li>自动类型转换(隐式)<blockquote>
+<p>特点:代码不需要进行特殊转换<br>规则:数据范围从小变大<br>当符合数据范围从小变大就会自动完成数据的转化<br>列如:long num1&#x3D;100;将100的int转换到long型的num1中</p>
+</blockquote>
+</li>
+<li>强制类型转换(显式)<blockquote>
+<p>特点:代码需要进行特殊的格式处理,不能自动完成</p>
+</blockquote>
+</li>
+</ol>
+</blockquote>
+]]></content>
+  </entry>
+  <entry>
+    <title>my-first-blog</title>
+    <url>/2022/07/27/%E4%B8%80/</url>
+    <content><![CDATA[<h1 id="ok"><a href="#ok" class="headerlink" title="#ok"></a>#ok</h1><p>终于搞好了,真他妈的累,现在都他妈1点多了<br>我的</p>
+<hr>
+<p><del>的</del><br><u>hh<u><br>[^run]<br>[^run]:hahah</p>
+<ul>
+<li>ui</li>
+<li>dd</li>
+<li>dd</li>
+</ul>
+<ol>
+<li>1</li>
+<li>1<ol>
+<li>e使用tab建</li>
+<li><blockquote>
+<p>111<br>q</p>
+<blockquote>
+<p>去</p>
+</blockquote>
+</blockquote>
+</li>
+</ol>
+</li>
+</ol>
+<p>[^RUNOOB]<br> <img src="/FVNZTNOUUAAvZWV.jpg"><br><code>int</code></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">()</span></span><br></pre></td></tr></table></figure>
+<p>这是一个链接 <a href="https://www.runoob.com/">菜鸟教程</a><br><a href="https://www.runoob.com/">https://www.runoob.com</a><br>这个链接用 1 作为网址变量 <a href="http://www.google.com/">Google</a><br>这个链接用 runoob 作为网址变量 <a href="http://www.runoob.com/">Runoob</a><br>然后在文档的结尾为变量赋值（网址）</p>
+<table>
+<thead>
+<tr>
+<th>hah</th>
+<th>hah</th>
+<th>hah</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sa</td>
+<td>s</td>
+<td>s</td>
+</tr>
+</tbody></table>
+]]></content>
+  </entry>
+</search>
