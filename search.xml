@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>离散数学</title>
+    <url>/2022/07/31/lisan/</url>
+    <content><![CDATA[<p>看的是:<a href="https://www.bilibili.com/video/BV1cs411H7sz?spm_id_from=333.337.search-card.all.click&vd_source=18f425caec31c9c45e1c1b046e1e7ba2">这个</a>视频</p>
+<p>#1.什么是集合?</p>
+<blockquote>
+<p>集合是由指定范围内的满足给定条件的所有对象聚集在一起构成,每一个对象称为这个集合的元素</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>数学</category>
+      </categories>
+      <tags>
+        <tag>数学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>1JAVA</title>
     <url>/2022/07/30/1JAVA/</url>
     <content><![CDATA[<p>#JAVA</p>
@@ -168,7 +184,22 @@
 <hr>
 <p>##P26算数运算符</p>
 <blockquote>
-<p>运算符:进行特定操作的符号,列如:+<br>表达式:用运算符连起来的式子叫做表达式,列如:20+5,a+b</p>
+<p>运算符:进行特定操作的符号,列如:+<br>表达式:用运算符连起来的式子叫做表达式,列如:20+5,a+b<br>###+</p>
+<ol>
+<li>对于字符char,在计算之前,char会被提升为int,然后再进行计算,char与int对应的表:ASCII,Unicode</li>
+<li>对于字符串String(首字母大写,所以不是关键字)来说,加号代表字符串的连接操作如:System.out.println(“Hello”+”World”);&#x2F;&#x2F;HelloWorld</li>
+<li><strong>任何数据类型和字符串进行连接的时候,结果都会变成字符串</strong>如:String Str2&#x3D;”java”;  System.out.println(str2+20);&#x2F;&#x2F;java20</li>
+</ol>
+<p>###优先级问题</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">&gt;System.out.println(str2+<span class="number">20</span>+<span class="number">30</span>);<span class="comment">//java2030</span></span><br><span class="line">&gt;System.out.println(str2+(<span class="number">20</span>+<span class="number">30</span>));<span class="comment">//java50</span></span><br></pre></td></tr></table></figure>
+<p>###自增自减<br>基本含义:让一个变量涨数字1,或者减数字1<br>使用格式:写在变量名称之前或者之后,列如:++num,num++<br>使用方法:</p>
+<ol>
+<li>单独使用:不和其他任何操作混合,自己独立成为一个步骤</li>
+<li>混合使用:和其他操作&#x3D;了.在单独使用时,前++和后++没有任何区别<br>使用区别:<br>如果是<strong>前++</strong>,那么变量<strong>立刻马上+1</strong>,然后拿着结果进行使用 <strong>先加后用</strong><br>如果是<strong>后++</strong>,那么首先使用变量本来的数值,<strong>然后再让变量+1</strong> <strong>先用后加</strong></li>
+</ol>
+<p>###复合赋值运算符<br>+&#x3D;: a+&#x3D;1 相当于 a&#x3D;a+1<br>-&#x3D;: b-&#x3D;4 相当于 b&#x3D;b-4<br>**&#x3D;: c*&#x3D;5 相当于 c&#x3D;c*5<br>&#x2F;&#x3D;: d&#x2F;&#x3D;6 相当于 d&#x3D;d&#x2F;6<br>%&#x3D;: e%&#x3D;7 相当于 e&#x3D;e%7<br>注意</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">&gt;<span class="type">byte</span> num=<span class="number">30</span>;</span><br><span class="line">&gt;<span class="comment">//num = num +5;</span></span><br><span class="line">&gt;<span class="comment">//num=byte+int;</span></span><br><span class="line">&gt;<span class="comment">//num=int+int;</span></span><br><span class="line">&gt;<span class="comment">//num=(byte)int;</span></span><br><span class="line">&gt;num+=<span class="number">5</span>;</span><br><span class="line">&gt;System.out.println(num);<span class="comment">//35</span></span><br></pre></td></tr></table></figure>
+<p>###比较运算符<br>&#x3D;&#x3D;:比较是否相等<br>!&#x3D;:不等与,返回true<br>####逻辑运算符<br>与(并且) &amp;&amp;:全部是ture才是true<br>或(或者) ||:至少一个是true<br>非(取反) !:本来是true,变成false;本来false,才是false<br><strong>短路</strong>:&amp;&amp;与||有短路效果,&amp;&amp;右边是false时,左边将不再判断</p>
 </blockquote>
 ]]></content>
       <categories>
@@ -177,5 +208,49 @@
       <tags>
         <tag>JAVA</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>my-first-blog</title>
+    <url>/2022/07/27/%E4%B8%80/</url>
+    <content><![CDATA[<h1 id="ok"><a href="#ok" class="headerlink" title="#ok"></a>#ok</h1><p>终于搞好了,真他妈的累,现在都他妈1点多了<br>我的</p>
+<hr>
+<p><del>的</del><br><u>hh<u><br>[^run]<br>[^run]:hahah</p>
+<ul>
+<li>ui</li>
+<li>dd</li>
+<li>dd</li>
+</ul>
+<ol>
+<li>1</li>
+<li>1<ol>
+<li>e使用tab建</li>
+<li><blockquote>
+<p>111<br>q</p>
+<blockquote>
+<p>去</p>
+</blockquote>
+</blockquote>
+</li>
+</ol>
+</li>
+</ol>
+<p>[^RUNOOB]<br> <img src="/FVNZTNOUUAAvZWV.jpg"><br><code>int</code></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">()</span></span><br></pre></td></tr></table></figure>
+<p>这是一个链接 <a href="https://www.runoob.com/">菜鸟教程</a><br><a href="https://www.runoob.com/">https://www.runoob.com</a><br>这个链接用 1 作为网址变量 <a href="http://www.google.com/">Google</a><br>这个链接用 runoob 作为网址变量 <a href="http://www.runoob.com/">Runoob</a><br>然后在文档的结尾为变量赋值（网址）</p>
+<table>
+<thead>
+<tr>
+<th>hah</th>
+<th>hah</th>
+<th>hah</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sa</td>
+<td>s</td>
+<td>s</td>
+</tr>
+</tbody></table>
+]]></content>
   </entry>
 </search>

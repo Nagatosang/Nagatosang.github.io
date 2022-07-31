@@ -28,7 +28,7 @@
 <meta property="og:description" content="#JAVA  每一篇内容是1到50集 ##P11.cmd的Helloworld编译">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-07-30T13:25:42.000Z">
-<meta property="article:modified_time" content="2022-07-30T13:33:59.511Z">
+<meta property="article:modified_time" content="2022-07-31T09:09:54.328Z">
 <meta property="article:author" content="小长门">
 <meta property="article:tag" content="JAVA">
 <meta name="twitter:card" content="summary">
@@ -183,10 +183,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2022-07-30 21:25:42 / 修改时间：21:33:59" itemprop="dateCreated datePublished" datetime="2022-07-30T21:25:42+08:00">2022-07-30</time>
+              <time title="创建时间：2022-07-30 21:25:42" itemprop="dateCreated datePublished" datetime="2022-07-30T21:25:42+08:00">2022-07-30</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-07-31 17:09:54" itemprop="dateModified" datetime="2022-07-31T17:09:54+08:00">2022-07-31</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -373,7 +379,22 @@
 <hr>
 <p>##P26算数运算符</p>
 <blockquote>
-<p>运算符:进行特定操作的符号,列如:+<br>表达式:用运算符连起来的式子叫做表达式,列如:20+5,a+b</p>
+<p>运算符:进行特定操作的符号,列如:+<br>表达式:用运算符连起来的式子叫做表达式,列如:20+5,a+b<br>###+</p>
+<ol>
+<li>对于字符char,在计算之前,char会被提升为int,然后再进行计算,char与int对应的表:ASCII,Unicode</li>
+<li>对于字符串String(首字母大写,所以不是关键字)来说,加号代表字符串的连接操作如:System.out.println(“Hello”+”World”);&#x2F;&#x2F;HelloWorld</li>
+<li><strong>任何数据类型和字符串进行连接的时候,结果都会变成字符串</strong>如:String Str2&#x3D;”java”;  System.out.println(str2+20);&#x2F;&#x2F;java20</li>
+</ol>
+<p>###优先级问题</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;System.out.println(str2+<span class="number">20</span>+<span class="number">30</span>);<span class="comment">//java2030</span></span><br><span class="line">&gt;System.out.println(str2+(<span class="number">20</span>+<span class="number">30</span>));<span class="comment">//java50</span></span><br></pre></td></tr></table></figure>
+<p>###自增自减<br>基本含义:让一个变量涨数字1,或者减数字1<br>使用格式:写在变量名称之前或者之后,列如:++num,num++<br>使用方法:</p>
+<ol>
+<li>单独使用:不和其他任何操作混合,自己独立成为一个步骤</li>
+<li>混合使用:和其他操作&#x3D;了.在单独使用时,前++和后++没有任何区别<br>使用区别:<br>如果是<strong>前++</strong>,那么变量<strong>立刻马上+1</strong>,然后拿着结果进行使用 <strong>先加后用</strong><br>如果是<strong>后++</strong>,那么首先使用变量本来的数值,<strong>然后再让变量+1</strong> <strong>先用后加</strong></li>
+</ol>
+<p>###复合赋值运算符<br>+&#x3D;: a+&#x3D;1 相当于 a&#x3D;a+1<br>-&#x3D;: b-&#x3D;4 相当于 b&#x3D;b-4<br>**&#x3D;: c*&#x3D;5 相当于 c&#x3D;c*5<br>&#x2F;&#x3D;: d&#x2F;&#x3D;6 相当于 d&#x3D;d&#x2F;6<br>%&#x3D;: e%&#x3D;7 相当于 e&#x3D;e%7<br>注意</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="type">byte</span> num=<span class="number">30</span>;</span><br><span class="line">&gt;<span class="comment">//num = num +5;</span></span><br><span class="line">&gt;<span class="comment">//num=byte+int;</span></span><br><span class="line">&gt;<span class="comment">//num=int+int;</span></span><br><span class="line">&gt;<span class="comment">//num=(byte)int;</span></span><br><span class="line">&gt;num+=<span class="number">5</span>;</span><br><span class="line">&gt;System.out.println(num);<span class="comment">//35</span></span><br></pre></td></tr></table></figure>
+<p>###比较运算符<br>&#x3D;&#x3D;:比较是否相等<br>!&#x3D;:不等与,返回true<br>####逻辑运算符<br>与(并且) &amp;&amp;:全部是ture才是true<br>或(或者) ||:至少一个是true<br>非(取反) !:本来是true,变成false;本来false,才是false<br><strong>短路</strong>:&amp;&amp;与||有短路效果,&amp;&amp;右边是false时,左边将不再判断</p>
 </blockquote>
 
     </div>
@@ -391,6 +412,16 @@
 
 
         
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/07/27/%E4%B8%80/" rel="prev" title="my-first-blog">
+      <i class="fa fa-chevron-left"></i> my-first-blog
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/07/31/lisan/" rel="next" title="离散数学">
+      离散数学 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
       </footer>
     
   </article>
@@ -461,20 +492,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
