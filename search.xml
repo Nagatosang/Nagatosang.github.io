@@ -1,39 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>2JAVA</title>
-    <url>/2022/08/03/2JAVA/</url>
-    <content><![CDATA[<p>#JAVA</p>
-<hr>
-<p>每一篇内容是1到50集</p>
-<p>##P58.IDEA的项目结构</p>
-<span id="more"></span>
-<p>###项目project&gt;模块model&gt;包package;</p>
-]]></content>
-      <categories>
-        <category>JAVA</category>
-      </categories>
-      <tags>
-        <tag>JAVA</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>离散数学</title>
-    <url>/2022/07/31/lisan/</url>
-    <content><![CDATA[<p>看的是:<a href="https://www.bilibili.com/video/BV1cs411H7sz?spm_id_from=333.337.search-card.all.click&vd_source=18f425caec31c9c45e1c1b046e1e7ba2">这个</a>视频</p>
-<p>#1.什么是集合?</p>
-<blockquote>
-<p>集合是由指定范围内的满足给定条件的所有对象聚集在一起构成,每一个对象称为这个集合的元素</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>数学</category>
-      </categories>
-      <tags>
-        <tag>数学</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>1JAVA</title>
     <url>/2022/07/30/1JAVA/</url>
     <content><![CDATA[<p>#JAVA</p>
@@ -261,6 +228,22 @@
       </tags>
   </entry>
   <entry>
+    <title>离散数学</title>
+    <url>/2022/07/31/lisan/</url>
+    <content><![CDATA[<p>看的是:<a href="https://www.bilibili.com/video/BV1cs411H7sz?spm_id_from=333.337.search-card.all.click&vd_source=18f425caec31c9c45e1c1b046e1e7ba2">这个</a>视频</p>
+<p>#1.什么是集合?</p>
+<blockquote>
+<p>集合是由指定范围内的满足给定条件的所有对象聚集在一起构成,每一个对象称为这个集合的元素</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>数学</category>
+      </categories>
+      <tags>
+        <tag>数学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>my-first-blog</title>
     <url>/2022/07/27/%E4%B8%80/</url>
     <content><![CDATA[<h1 id="ok"><a href="#ok" class="headerlink" title="#ok"></a>#ok</h1><p>终于搞好了,真他妈的累,现在都他妈1点多了<br>我的</p>
@@ -303,5 +286,74 @@
 </tr>
 </tbody></table>
 ]]></content>
+  </entry>
+  <entry>
+    <title>2JAVA</title>
+    <url>/2022/08/03/2JAVA/</url>
+    <content><![CDATA[<p>#JAVA<br>***g<br>‘<br>每一篇内容是1到50集</p>
+<p>##P58.IDEA的项目结构</p>
+<span id="more"></span>
+<p>###项目project&gt;模块model&gt;包package;</p>
+<hr>
+<p>##P73.方法重载overload</p>
+<blockquote>
+<p>重载就是方法的名称相同但参数不一样,可以是一个两个三个,具体使用哪个方法看调用时传入几个参数</p>
+</blockquote>
+<p><strong>注意</strong></p>
+<blockquote>
+<p><strong>有关</strong></p>
+<ol>
+<li>参数个数不同</li>
+<li>参数类型不同</li>
+<li>参数多类型顺序不同 比如(int a,double b)和(double a,int b)<br><strong>无关</strong></li>
+<li>与参数的名称</li>
+<li>和返回值类型无关</li>
+</ol>
+</blockquote>
+<hr>
+<p>##P79.数组<br>###两种常见的初始化</p>
+<blockquote>
+<ol>
+<li>动态初始化(指定长度)<blockquote>
+<p>格式:数据类型[] 数组名称 &#x3D;new 数据类型[数组长度];</p>
+</blockquote>
+</li>
+<li>静态初始化(指定内容)<blockquote>
+<p>数据类型[] 数组名称 &#x3D;new 数据类型[]{元素1,元素2,…};<br>省略格式:数据类型[] 数组名称 &#x3D;{元素1,元素2,…};</p>
+</blockquote>
+</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>直接打印数组名称出现的时内存地址哈希值[i@75412才f [表示是数组,i表示放的是int类型,@后面是十六进制</p>
+</blockquote>
+<blockquote>
+<p>使用动态初始化数组的时候,其中的元素将会自动拥有一个默认值,规则如下</p>
+<ol>
+<li>如果是整数类型,默认0;</li>
+<li>如果是浮点类型,默认0.0;</li>
+<li>如果是字符类型,默认’\u0000’;其中u是uniode,0000是十六就职</li>
+<li>如果是布尔类型,默认false;</li>
+<li>如果是引用类型,默认为null;<br>静态初始化也有默认值的过程,只不过系统自动马上将默认值替换为了大括号当中的具体数值</li>
+</ol>
+</blockquote>
+<hr>
+<p>##P84.内存的划分<br><strong>五个部分</strong></p>
+<blockquote>
+<ol>
+<li>栈(stack):存放的都是方法中的局部变量.方法的运行一定要在栈当中运行.<br>局部变量:方法的参数,或者是方法{}内部的变量<br>作用域:一旦超出作用域,立刻从栈内存当中消失</li>
+<li>堆(heap):凡是new出来的东西,都在堆当中<br>堆内存里面的东西都有一个地址值:16进制<br>堆内存里面的数据,都有默认值规则:<br>如果是整数类型,默认0;<br>如果是浮点类型,默认0.0;<br>如果是字符类型,默认’\u0000’;其中u是uniode,0000是十六就职<br>如果是布尔类型,默认false;<br>如果是引用类型,默认为null;</li>
+<li>方法区(Method Area):存储.class相关信息,包含方法的信息</li>
+<li>本地方法栈(Native Method Stack):与操作系统相关</li>
+<li>寄存器(PC Register):与PC相关</li>
+</ol>
+</blockquote>
+]]></content>
+      <categories>
+        <category>JAVA</category>
+      </categories>
+      <tags>
+        <tag>JAVA</tag>
+      </tags>
   </entry>
 </search>
